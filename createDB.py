@@ -1,6 +1,6 @@
 import sqlite3
-connect = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
-
+##connect = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
+connect = sqlite3.connect('\pt_table.db')
 db = connect.cursor()
 
 db.execute("DROP TABLE IF EXISTS pt_table")  ##to delete table name "patient_table" from pt_table database if exist

@@ -3,7 +3,8 @@ import pandas as pd
 
 
 def get_db_connection():
-    conn = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
+    ##conn = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
+    conn = sqlite3.connect('\pt_table.db')
     conn.row_factory = sqlite3.Row
     return conn
 
