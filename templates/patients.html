@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1  style="text-align:center;font-size:300%;color:blue;">Welcome to Patient List</h1>
+
+   
+    <!--  calling a file from the CDN,
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+
+</head>
+<body>
+
+    <div>
+
+        <h1  style="text-align:center;font-size:150%;color:rgba(255, 0, 60, 0.845);">Patient Table</h1>
+          
+            <!--  using bootstrap -->
+            <table class="table table-dark table-striped">
+                <tr>  
+                    <th> MRN </th>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> DOB </th>
+                </tr>
+                {% for patient in listPatients %}
+                    <tr>
+                        <td> {{ patient.MRN }} </td>
+                        <td> {{ patient.firstName }} </td>
+                        <td> {{ patient.lastName }} </td>
+                        <td> {{ patient.DOB }} </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+
+
+    </div>
+
+
+</body>
+</html>
