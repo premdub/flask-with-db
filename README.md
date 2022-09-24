@@ -1,4 +1,9 @@
 # flask-with-db
+
+IP address via GCP ====>  34.70.61.86/patients
+IP address local machine ====> 192.168.1.26/patients
+
+
 Part 1 – Connecting Flask to SQlite:
 Slides to follow: presentation wk4c
 Create a new github repo called ‘flask-with-db’ in your
