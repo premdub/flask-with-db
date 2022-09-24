@@ -1,6 +1,7 @@
 import sqlite3
-connect = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
-##connect = sqlite3.connect('\flask-with-db\pt_table.db')
+
+connect = sqlite3.connect (r"C:\Users\premd\OneDrive\Desktop\HHA_504_\flask_with_db\pt_table.db")
+##connect = sqlite3.connect('.\pt_table.db')
 db = connect.cursor()
 
 db.execute("DROP TABLE IF EXISTS pt_table")  ##to delete table name "patient_table" from pt_table database if exist
@@ -26,7 +27,6 @@ db.execute("INSERT INTO pt_table(mrn, firstname, lastname, dob) values('02045', 
 db.execute("INSERT INTO pt_table(mrn, firstname, lastname, dob) values('67890', 'Jenny', 'Dolan', '04/25/1987')")
 db.execute("INSERT INTO pt_table(mrn, firstname, lastname, dob) values('56849', 'Manny', 'Zausin', '07/12/1956')")
 db.execute("INSERT INTO pt_table(mrn, firstname, lastname, dob) values('45678', 'Benny', 'Pedro', '08/24/1948')")
-
 
 Dummyperson1= """ INSERT INTO pt_table(mrn, firstname, lastname, dob) values('45783', 'Vallarie', 'Goldstein', '05/31/1958') """
 Dummyperson2= """ INSERT INTO pt_table(mrn, firstname, lastname, dob) values('45839', 'Wendy', 'Gottachetta', '01/05/1987') """
