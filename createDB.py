@@ -1,10 +1,10 @@
 import sqlite3
-##connect = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
-##connect = sqlite3.connect('\pt_table.db')
+connect = sqlite3.connect(r'C:\Users\premd\OneDrive\Desktop\HHA_504_\flask-with-db\pt_table.db')
+##connect = sqlite3.connect('\flask-with-db\pt_table.db')
 db = connect.cursor()
 
-##db.execute("DROP TABLE IF EXISTS pt_table")  ##to delete table name "patient_table" from pt_table database if exist
-##connect.commit() # commit the changes
+db.execute("DROP TABLE IF EXISTS pt_table")  ##to delete table name "patient_table" from pt_table database if exist
+connect.commit() # commit the changes
 
 ## create new tabler with new variables
 table = """ CREATE TABLE pt_table (
@@ -35,4 +35,4 @@ db.execute(Dummyperson2)
 connect.commit()
 
 #close the connection
-connect.close()
+##connect.close()
