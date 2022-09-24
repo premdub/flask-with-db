@@ -3,6 +3,7 @@
 IP address via GCP ====>  34.70.61.86/patients
 IP address local machine ====> 192.168.1.26/patients
 
+#########PLEASE FIND SCREENSHOTS OF OUTPUT IN SCREENSHOT FOLDER############
 
 Part 1 – Connecting Flask to SQlite:
 Slides to follow: presentation wk4c
